@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+<data name="CurrentCulture" xml:space="preserve"><value>zh-tw</value></data>
+<data name="PuppetDeformationEffectName" xml:space="preserve"><value>木偶變形</value></data>
+<data name="PuppetDeformationStiffnessName" xml:space="preserve"><value>剛性</value></data>
+<data name="PuppetDeformationStiffnessDesc" xml:space="preserve"><value>調整圖釘周圍變形的硬度。值越大附近圖釘的影響越強 越小變形越平滑。</value></data>
+<data name="PuppetDeformationEnabledName" xml:space="preserve"><value>啟用</value></data>
+<data name="PuppetDeformationEnabledDesc" xml:space="preserve"><value>啟用此圖釘的移動。停用時圖釘作為固定錨點抑制變形。</value></data>
+<data name="PuppetDeformationRestXName" xml:space="preserve"><value>基準X</value></data>
+<data name="PuppetDeformationRestXDesc" xml:space="preserve"><value>圖釘的原始X位置。這是圖像跟隨的錨點。</value></data>
+<data name="PuppetDeformationRestYName" xml:space="preserve"><value>基準Y</value></data>
+<data name="PuppetDeformationRestYDesc" xml:space="preserve"><value>圖釘的原始Y位置。這是圖像跟隨的錨點。</value></data>
+<data name="PuppetDeformationOffsetXName" xml:space="preserve"><value>移動X</value></data>
+<data name="PuppetDeformationOffsetXDesc" xml:space="preserve"><value>從基準位置的移動量 (X)。透過在預覽中拖曳圖釘來更新。</value></data>
+<data name="PuppetDeformationOffsetYName" xml:space="preserve"><value>移動Y</value></data>
+<data name="PuppetDeformationOffsetYDesc" xml:space="preserve"><value>從基準位置的移動量 (Y)。透過在預覽中拖曳圖釘來更新。</value></data>
+<data name="TagPuppet" xml:space="preserve"><value>木偶</value></data>
+<data name="TagPin" xml:space="preserve"><value>圖釘</value></data>
+<data name="TagWarp" xml:space="preserve"><value>變形</value></data>
+<data name="TagDeform" xml:space="preserve"><value>變形</value></data>
+<data name="PuppetDeformationListPinsDesc" xml:space="preserve"><value>新增或刪除木偶變形圖釘。</value></data>
+<data name="PuppetDeformationListAddPin" xml:space="preserve"><value>新增圖釘</value></data>
+<data name="PuppetDeformationListRemovePin" xml:space="preserve"><value>刪除選中的圖釘</value></data>
+<data name="PuppetDeformationListResetTitle" xml:space="preserve"><value>確認</value></data>
+<data name="PuppetDeformationListResetMessage" xml:space="preserve"><value>將所有圖釘的移動量重置。是否繼續?</value></data>
+<data name="PuppetDeformationEditorSyncModeName" xml:space="preserve"><value>同步模式</value></data>
+<data name="PuppetDeformationEditorSyncModeDesc" xml:space="preserve"><value>選擇多個選中的圖釘如何同步移動。</value></data>
+<data name="PuppetDeformationEditorSyncModeNoneName" xml:space="preserve"><value>無</value></data>
+<data name="PuppetDeformationEditorSyncModeNoneDesc" xml:space="preserve"><value>僅移動選中的圖釘。</value></data>
+<data name="PuppetDeformationEditorSyncModeDistanceName" xml:space="preserve"><value>距離衰減</value></data>
+<data name="PuppetDeformationEditorSyncModeDistanceDesc" xml:space="preserve"><value>根據與移動圖釘的距離，相應衰減移動其他選中的圖釘。</value></data>
+<data name="PuppetDeformationEditorSyncModeParallelName" xml:space="preserve"><value>平行移動</value></data>
+<data name="PuppetDeformationEditorSyncModeParallelDesc" xml:space="preserve"><value>將所有選中的圖釘同等平行移動。</value></data>
+<data name="PuppetDeformationLabelMove" xml:space="preserve"><value>移動</value></data>
+<data name="PuppetDeformationLabelAnchor" xml:space="preserve"><value>基準</value></data>
+<data name="PuppetDeformationRestButtonTooltip" xml:space="preserve"><value>Alt+點擊可選取移動點</value></data>
+<data name="PuppetDeformationOffsetButtonTooltip" xml:space="preserve"><value>Alt+點擊可選取基準點</value></data>
+</root>

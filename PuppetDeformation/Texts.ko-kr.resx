@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+<data name="CurrentCulture" xml:space="preserve"><value>ko-kr</value></data>
+<data name="PuppetDeformationEffectName" xml:space="preserve"><value>퍼펫 변형</value></data>
+<data name="PuppetDeformationStiffnessName" xml:space="preserve"><value>강성</value></data>
+<data name="PuppetDeformationStiffnessDesc" xml:space="preserve"><value>핀 주변 변형의 강도를 조정합니다. 값이 클수록 근처 핀의 영향이 강해지고 작을수록 부드럽게 퍼집니다.</value></data>
+<data name="PuppetDeformationEnabledName" xml:space="preserve"><value>사용</value></data>
+<data name="PuppetDeformationEnabledDesc" xml:space="preserve"><value>이 핀의 이동을 활성화합니다. 비활성화 시 핀은 고정 앵커로 변형을 억제합니다.</value></data>
+<data name="PuppetDeformationRestXName" xml:space="preserve"><value>기준 X</value></data>
+<data name="PuppetDeformationRestXDesc" xml:space="preserve"><value>핀의 원래 X 위치. 이미지가 따라가는 기준점입니다.</value></data>
+<data name="PuppetDeformationRestYName" xml:space="preserve"><value>기준 Y</value></data>
+<data name="PuppetDeformationRestYDesc" xml:space="preserve"><value>핀의 원래 Y 위치. 이미지가 따라가는 기준점입니다.</value></data>
+<data name="PuppetDeformationOffsetXName" xml:space="preserve"><value>이동 X</value></data>
+<data name="PuppetDeformationOffsetXDesc" xml:space="preserve"><value>기준 위치로부터의 이동량 (X). 미리보기에서 드래그로 변경됩니다.</value></data>
+<data name="PuppetDeformationOffsetYName" xml:space="preserve"><value>이동 Y</value></data>
+<data name="PuppetDeformationOffsetYDesc" xml:space="preserve"><value>기준 위치로부터의 이동량 (Y). 미리보기에서 드래그로 변경됩니다.</value></data>
+<data name="TagPuppet" xml:space="preserve"><value>퍼펫</value></data>
+<data name="TagPin" xml:space="preserve"><value>핀</value></data>
+<data name="TagWarp" xml:space="preserve"><value>워프</value></data>
+<data name="TagDeform" xml:space="preserve"><value>변형</value></data>
+<data name="PuppetDeformationListPinsDesc" xml:space="preserve"><value>퍼펫 변형 핀을 추가/삭제합니다.</value></data>
+<data name="PuppetDeformationListAddPin" xml:space="preserve"><value>핀 추가</value></data>
+<data name="PuppetDeformationListRemovePin" xml:space="preserve"><value>선택된 핀 삭제</value></data>
+<data name="PuppetDeformationListResetTitle" xml:space="preserve"><value>확인</value></data>
+<data name="PuppetDeformationListResetMessage" xml:space="preserve"><value>모든 핀의 이동량을 초기화합니다. 계속하시겠습니까?</value></data>
+<data name="PuppetDeformationEditorSyncModeName" xml:space="preserve"><value>동기화 모드</value></data>
+<data name="PuppetDeformationEditorSyncModeDesc" xml:space="preserve"><value>여러 선택된 핀의 동기 이동 방식을 선택합니다.</value></data>
+<data name="PuppetDeformationEditorSyncModeNoneName" xml:space="preserve"><value>없음</value></data>
+<data name="PuppetDeformationEditorSyncModeNoneDesc" xml:space="preserve"><value>선택한 핀만 이동합니다.</value></data>
+<data name="PuppetDeformationEditorSyncModeDistanceName" xml:space="preserve"><value>거리 감쇠</value></data>
+<data name="PuppetDeformationEditorSyncModeDistanceDesc" xml:space="preserve"><value>이동한 핀과의 거리에 따라 다른 선택된 핀도 감쇠하며 이동합니다.</value></data>
+<data name="PuppetDeformationEditorSyncModeParallelName" xml:space="preserve"><value>평행 이동</value></data>
+<data name="PuppetDeformationEditorSyncModeParallelDesc" xml:space="preserve"><value>모든 선택된 핀을 평행하게 같은 양만큼 이동합니다.</value></data>
+<data name="PuppetDeformationLabelMove" xml:space="preserve"><value>이동</value></data>
+<data name="PuppetDeformationLabelAnchor" xml:space="preserve"><value>기준</value></data>
+<data name="PuppetDeformationRestButtonTooltip" xml:space="preserve"><value>Alt+클릭으로 이동 포인트 선택</value></data>
+<data name="PuppetDeformationOffsetButtonTooltip" xml:space="preserve"><value>Alt+클릭으로 기준 포인트 선택</value></data>
+</root>

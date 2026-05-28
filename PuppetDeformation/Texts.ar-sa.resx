@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+<data name="CurrentCulture" xml:space="preserve"><value>ar-sa</value></data>
+<data name="PuppetDeformationEffectName" xml:space="preserve"><value>تشويه الدمية</value></data>
+<data name="PuppetDeformationStiffnessName" xml:space="preserve"><value>الصلابة</value></data>
+<data name="PuppetDeformationStiffnessDesc" xml:space="preserve"><value>يضبط مدى صلابة المنطقة حول الدبوس. القيم الأعلى تركّز التأثير قرب الدبوس والأقل توزّعه بسلاسة.</value></data>
+<data name="PuppetDeformationEnabledName" xml:space="preserve"><value>تفعيل</value></data>
+<data name="PuppetDeformationEnabledDesc" xml:space="preserve"><value>تفعيل تحريك هذا الدبوس. عند التعطيل يعمل الدبوس كمرساة ثابتة تقاوم التشويه.</value></data>
+<data name="PuppetDeformationRestXName" xml:space="preserve"><value>المرجع X</value></data>
+<data name="PuppetDeformationRestXDesc" xml:space="preserve"><value>موضع X الأصلي للدبوس. هو المرجع الذي تتبعه الصورة.</value></data>
+<data name="PuppetDeformationRestYName" xml:space="preserve"><value>المرجع Y</value></data>
+<data name="PuppetDeformationRestYDesc" xml:space="preserve"><value>موضع Y الأصلي للدبوس. هو المرجع الذي تتبعه الصورة.</value></data>
+<data name="PuppetDeformationOffsetXName" xml:space="preserve"><value>تحريك X</value></data>
+<data name="PuppetDeformationOffsetXDesc" xml:space="preserve"><value>مقدار التحرك من المرجع (X). يتغير بسحب الدبوس في المعاينة.</value></data>
+<data name="PuppetDeformationOffsetYName" xml:space="preserve"><value>تحريك Y</value></data>
+<data name="PuppetDeformationOffsetYDesc" xml:space="preserve"><value>مقدار التحرك من المرجع (Y). يتغير بسحب الدبوس في المعاينة.</value></data>
+<data name="TagPuppet" xml:space="preserve"><value>دمية</value></data>
+<data name="TagPin" xml:space="preserve"><value>دبوس</value></data>
+<data name="TagWarp" xml:space="preserve"><value>تشويه</value></data>
+<data name="TagDeform" xml:space="preserve"><value>تشويه</value></data>
+<data name="PuppetDeformationListPinsDesc" xml:space="preserve"><value>إضافة أو إزالة دبابيس تشويه الدمية.</value></data>
+<data name="PuppetDeformationListAddPin" xml:space="preserve"><value>إضافة دبوس</value></data>
+<data name="PuppetDeformationListRemovePin" xml:space="preserve"><value>إزالة الدبوس المحدد</value></data>
+<data name="PuppetDeformationListResetTitle" xml:space="preserve"><value>تأكيد</value></data>
+<data name="PuppetDeformationListResetMessage" xml:space="preserve"><value>إعادة تعيين تحريك جميع الدبابيس. هل تريد المتابعة؟</value></data>
+<data name="PuppetDeformationEditorSyncModeName" xml:space="preserve"><value>وضع المزامنة</value></data>
+<data name="PuppetDeformationEditorSyncModeDesc" xml:space="preserve"><value>يحدد كيفية تحرك الدبابيس المحددة المتعددة معًا.</value></data>
+<data name="PuppetDeformationEditorSyncModeNoneName" xml:space="preserve"><value>لا شيء</value></data>
+<data name="PuppetDeformationEditorSyncModeNoneDesc" xml:space="preserve"><value>تحريك الدبابيس المحددة فقط.</value></data>
+<data name="PuppetDeformationEditorSyncModeDistanceName" xml:space="preserve"><value>اضمحلال المسافة</value></data>
+<data name="PuppetDeformationEditorSyncModeDistanceDesc" xml:space="preserve"><value>تحريك الدبابيس المحددة الأخرى بناءً على المسافة من الدبوس المحرك.</value></data>
+<data name="PuppetDeformationEditorSyncModeParallelName" xml:space="preserve"><value>موازي</value></data>
+<data name="PuppetDeformationEditorSyncModeParallelDesc" xml:space="preserve"><value>تحريك جميع الدبابيس المحددة بشكل متساوٍ ومتوازي.</value></data>
+<data name="PuppetDeformationLabelMove" xml:space="preserve"><value>تحريك</value></data>
+<data name="PuppetDeformationLabelAnchor" xml:space="preserve"><value>مرجع</value></data>
+<data name="PuppetDeformationRestButtonTooltip" xml:space="preserve"><value>Alt+انقر لتحديد نقطة التحريك</value></data>
+<data name="PuppetDeformationOffsetButtonTooltip" xml:space="preserve"><value>Alt+انقر لتحديد نقطة المرجع</value></data>
+</root>
