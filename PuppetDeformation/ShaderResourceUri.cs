@@ -8,6 +8,6 @@ namespace PuppetDeformation
 {
     internal class ShaderResourceUri
     {
-        public static Uri Get(string shaderName) => new($"pack://application:,,,/PuppetDeformation;component/Resources/Shader/{shaderName}.cso");
+        public static Uri Get(string shaderName) => new Uri($"pack://application:,,,/PuppetDeformation;component/Shaders/{shaderName}.cso", UriKind.Absolute);
     }
 }
