@@ -10,6 +10,8 @@ YukkuriMovieMaker4（YMM4）上で動作する、**ピンを打って画像を�
 HLSL ピクセルシェーダーを Direct2D カスタムエフェクトとして実装しており、GPU 上でのリアルタイムレンダリングが可能です。
 Moving Least Squares（MLS）アルゴリズムに基づく剛体変換により、ピンの移動に追従した滑らかで自然な変形を実現します。
 各ピンの位置・移動量はキーフレームアニメーションに対応しており、揺れ・うねり・表情の変化など多彩な演出が可能です。
+
+![Image](https://github.com/routersys/YMM4-PuppetDeformation/blob/main/docs/PuppetDeformation.png)
  
 ---
  
