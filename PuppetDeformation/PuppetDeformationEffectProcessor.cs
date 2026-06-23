@@ -23,6 +23,7 @@ namespace PuppetDeformation
         ImmutableList<VideoEffectController> cachedControllers = ImmutableList<VideoEffectController>.Empty;
 
         bool isFirst = true;
+        bool apply = true;
         int pinCount;
         float stiffness;
         float imageWidth;
@@ -39,6 +40,7 @@ namespace PuppetDeformation
 
             var pins = item.Pins;
             var stiffness = (float)item.Stiffness.GetValue(frame, length, fps);
+            var apply = item.ApplyDeformation;
 
             var pinCount = Math.Min(pins.Count, PuppetDeformationCustomEffect.MaxPins);
             var samples = new List<PinSample>(pinCount);
@@ -63,22 +65,34 @@ namespace PuppetDeformation
                 || this.stiffness != stiffness
                 || this.imageWidth != imageWidth
                 || this.imageHeight != imageHeight
+                || this.apply != apply
                 || !PinSamplesMatchBuffer(samples))
             {
-                gpuCache?.Dispose();
                 gpuCache = BuildGpuCache(stiffness, imageWidth, imageHeight, samples);
 
-                effect.SetInput(1, gpuCache.DataBitmap, true);
-                effect.PinCount = pinCount;
+                effect.PinData = gpuCache.PinData;
+                //変形オフ時はPinCount=0を送り、シェーダー側で変形せず入力をそのまま出力する。
+                effect.PinCount = apply ? pinCount : 0;
                 effect.Stiffness = stiffness;
 
-                var (tl, tt, tr, tb) = gpuCache.TightBounds;
-                effect.TightLocalLeft = tl;
-                effect.TightLocalTop = tt;
-                effect.TightLocalRight = tr;
-                effect.TightLocalBottom = tb;
+                if (apply)
+                {
+                    var (tl, tt, tr, tb) = gpuCache.TightBounds;
+                    effect.TightLocalLeft = tl;
+                    effect.TightLocalTop = tt;
+                    effect.TightLocalRight = tr;
+                    effect.TightLocalBottom = tb;
+                }
+                else
+                {
+                    //変形しないので出力範囲は拡張しない(入力範囲のまま)。
+                    effect.TightLocalLeft = 0;
+                    effect.TightLocalTop = 0;
+                    effect.TightLocalRight = 0;
+                    effect.TightLocalBottom = 0;
+                }
 
-                cachedControllers = ImmutableList.CreateRange(BuildControllers(samples));
+                cachedControllers = [.. BuildControllers(samples)];
             }
 
             isFirst = false;
@@ -86,6 +100,7 @@ namespace PuppetDeformation
             this.stiffness = stiffness;
             this.imageWidth = imageWidth;
             this.imageHeight = imageHeight;
+            this.apply = apply;
 
             return effectDescription.DrawDescription with
             {
@@ -130,21 +145,8 @@ namespace PuppetDeformation
             }
             Array.Clear(pinDataBuffer, count * 4, (maxPins - count) * 4);
 
-            ID2D1Bitmap dataBitmap;
-            unsafe
-            {
-                fixed (float* pData = pinDataBuffer)
-                {
-                    var props = new BitmapProperties1(
-                        new Vortice.DCommon.PixelFormat(Format.R32G32B32A32_Float, Vortice.DCommon.AlphaMode.Premultiplied),
-                        96f, 96f, BitmapOptions.None);
-                    dataBitmap = deviceContext!.CreateBitmap(
-                        new SizeI(maxPins, 1),
-                        (nint)pData,
-                        maxPins * 16,
-                        props);
-                }
-            }
+            var pinData = new byte[maxPins * 16];
+            Buffer.BlockCopy(pinDataBuffer, 0, pinData, 0, pinData.Length);
 
             (float left, float top, float right, float bottom) tightBounds;
             if (count > 0 && imageWidth > 0 && imageHeight > 0)
@@ -158,7 +160,7 @@ namespace PuppetDeformation
                 tightBounds = (-halfW, -halfH, halfW, halfH);
             }
 
-            return new PinGpuCache(dataBitmap, tightBounds);
+            return new PinGpuCache(pinData, tightBounds);
         }
 
         List<VideoEffectController> BuildControllers(List<PinSample> samples)
@@ -344,8 +346,6 @@ namespace PuppetDeformation
         protected override void ClearEffectChain()
         {
             effect?.SetInput(0, null, true);
-            effect?.SetInput(1, null, true);
-            gpuCache?.Dispose();
             gpuCache = null;
             cachedControllers = ImmutableList<VideoEffectController>.Empty;
             isFirst = true;
@@ -355,7 +355,6 @@ namespace PuppetDeformation
         {
             if (disposing)
             {
-                gpuCache?.Dispose();
                 gpuCache = null;
                 deviceContext = null;
                 effect = null;
@@ -372,13 +371,11 @@ namespace PuppetDeformation
         }
 
         sealed class PinGpuCache(
-            ID2D1Bitmap dataBitmap,
-            (float Left, float Top, float Right, float Bottom) tightBounds) : IDisposable
+            byte[] pinData,
+            (float Left, float Top, float Right, float Bottom) tightBounds)
         {
-            public ID2D1Bitmap DataBitmap { get; } = dataBitmap;
+            public byte[] PinData { get; } = pinData;
             public (float Left, float Top, float Right, float Bottom) TightBounds { get; } = tightBounds;
-
-            public void Dispose() => DataBitmap.Dispose();
         }
     }
 }

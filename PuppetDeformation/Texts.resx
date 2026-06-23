@@ -93,4 +93,6 @@
 <data name="PuppetDeformationLabelAnchor" xml:space="preserve"><value>基準</value></data>
 <data name="PuppetDeformationRestButtonTooltip" xml:space="preserve"><value>Alt+クリックで移動ポイントを選択</value></data>
 <data name="PuppetDeformationOffsetButtonTooltip" xml:space="preserve"><value>Alt+クリックで基準ポイントを選択</value></data>
+<data name="PuppetDeformationApplyName" xml:space="preserve"><value>変形を適用</value></data>
+<data name="PuppetDeformationApplyDesc" xml:space="preserve"><value>変形を画像に適用します。オフにすると変形前の画像のままピンを編集できます。</value></data>
 </root>

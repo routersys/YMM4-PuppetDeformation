@@ -93,4 +93,6 @@
 <data name="PuppetDeformationLabelAnchor" xml:space="preserve"><value>Anchor</value></data>
 <data name="PuppetDeformationRestButtonTooltip" xml:space="preserve"><value>Alt+Click to select the move point</value></data>
 <data name="PuppetDeformationOffsetButtonTooltip" xml:space="preserve"><value>Alt+Click to select the anchor point</value></data>
+<data name="PuppetDeformationApplyName" xml:space="preserve"><value>Apply Deformation</value></data>
+<data name="PuppetDeformationApplyDesc" xml:space="preserve"><value>Applies the deformation to the image. When off you can edit pins on the original undeformed image.</value></data>
 </root>

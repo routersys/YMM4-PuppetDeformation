@@ -93,4 +93,6 @@
 <data name="PuppetDeformationLabelAnchor" xml:space="preserve"><value>Ancla</value></data>
 <data name="PuppetDeformationRestButtonTooltip" xml:space="preserve"><value>Alt+Clic para seleccionar el punto de movimiento</value></data>
 <data name="PuppetDeformationOffsetButtonTooltip" xml:space="preserve"><value>Alt+Clic para seleccionar el punto de ancla</value></data>
+<data name="PuppetDeformationApplyName" xml:space="preserve"><value>Aplicar deformación</value></data>
+<data name="PuppetDeformationApplyDesc" xml:space="preserve"><value>Aplica la deformación a la imagen. Al desactivar puedes editar los alfileres sobre la imagen original sin deformar.</value></data>
 </root>

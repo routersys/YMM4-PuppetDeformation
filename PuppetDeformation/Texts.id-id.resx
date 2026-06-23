@@ -93,4 +93,6 @@
 <data name="PuppetDeformationLabelAnchor" xml:space="preserve"><value>Acuan</value></data>
 <data name="PuppetDeformationRestButtonTooltip" xml:space="preserve"><value>Alt+Klik untuk memilih titik pindah</value></data>
 <data name="PuppetDeformationOffsetButtonTooltip" xml:space="preserve"><value>Alt+Klik untuk memilih titik jangkar</value></data>
+<data name="PuppetDeformationApplyName" xml:space="preserve"><value>Terapkan Deformasi</value></data>
+<data name="PuppetDeformationApplyDesc" xml:space="preserve"><value>Menerapkan deformasi ke gambar. Saat nonaktif Anda dapat mengedit pin pada gambar asli tanpa deformasi.</value></data>
 </root>

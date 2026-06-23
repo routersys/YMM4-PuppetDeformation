@@ -93,4 +93,6 @@
 <data name="PuppetDeformationLabelAnchor" xml:space="preserve"><value>مرجع</value></data>
 <data name="PuppetDeformationRestButtonTooltip" xml:space="preserve"><value>Alt+انقر لتحديد نقطة التحريك</value></data>
 <data name="PuppetDeformationOffsetButtonTooltip" xml:space="preserve"><value>Alt+انقر لتحديد نقطة المرجع</value></data>
+<data name="PuppetDeformationApplyName" xml:space="preserve"><value>تطبيق التشويه</value></data>
+<data name="PuppetDeformationApplyDesc" xml:space="preserve"><value>يطبّق التشويه على الصورة. عند الإيقاف يمكنك تحرير الدبابيس على الصورة الأصلية دون تشويه.</value></data>
 </root>

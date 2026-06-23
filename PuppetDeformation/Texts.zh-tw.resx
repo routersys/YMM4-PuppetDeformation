@@ -93,4 +93,6 @@
 <data name="PuppetDeformationLabelAnchor" xml:space="preserve"><value>基準</value></data>
 <data name="PuppetDeformationRestButtonTooltip" xml:space="preserve"><value>Alt+點擊可選取移動點</value></data>
 <data name="PuppetDeformationOffsetButtonTooltip" xml:space="preserve"><value>Alt+點擊可選取基準點</value></data>
+<data name="PuppetDeformationApplyName" xml:space="preserve"><value>套用變形</value></data>
+<data name="PuppetDeformationApplyDesc" xml:space="preserve"><value>將變形套用到圖像。關閉時可在未變形的原圖上編輯圖釘。</value></data>
 </root>

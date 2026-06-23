@@ -93,4 +93,6 @@
 <data name="PuppetDeformationLabelAnchor" xml:space="preserve"><value>기준</value></data>
 <data name="PuppetDeformationRestButtonTooltip" xml:space="preserve"><value>Alt+클릭으로 이동 포인트 선택</value></data>
 <data name="PuppetDeformationOffsetButtonTooltip" xml:space="preserve"><value>Alt+클릭으로 기준 포인트 선택</value></data>
+<data name="PuppetDeformationApplyName" xml:space="preserve"><value>변형 적용</value></data>
+<data name="PuppetDeformationApplyDesc" xml:space="preserve"><value>변형을 이미지에 적용합니다. 끄면 변형 전 원본 이미지에서 핀을 편집할 수 있습니다.</value></data>
 </root>
